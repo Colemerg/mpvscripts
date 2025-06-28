@@ -1,0 +1,11 @@
+yt-dlp --cookies-from-browser firefox ^
+-o "C:\Users\Caner\Videos\%(channel)s\%(playlist_title,NA)s\%(upload_date)s - %(title)s.%(ext)s" ^
+--format "bv*[height<=1080]+ba/b[height<=1080]" ^
+--merge-output-format mp4 ^
+--concurrent-fragments 10 ^
+--embed-thumbnail --embed-metadata --embed-subs ^
+--write-auto-sub --sub-langs "tr" ^
+--write-thumbnail --add-metadata ^
+--download-archive downloaded.txt ^
+-v ^
+"https://www.youtube.com/@youtube-channel"
